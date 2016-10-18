@@ -60,7 +60,7 @@ rl.question('Welcome, What would you like to access? Enter search/post/timeline 
 
 	else if (reply === 'timeline') {
 
-		rl.question('Whose timeline are would you like to view? ', function(answer){
+		rl.question('Whose timeline are would you like to view? Enter twitter handle(e.g sambasten)', function(answer){
 			
 			if(answer ===''){
 				rl.close();

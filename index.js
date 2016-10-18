@@ -17,21 +17,21 @@ var rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-rl.question('What functionality would you like to access? (search/post/timeline) ', function(reply){
+rl.question('Welcome, What would you like to access? Enter search/post/timeline ', function(reply){
 	if(reply ===''){
 
 		rl.close();
-		console.log('Ha! we didnt forget to check please type in something');
+		console.log('Please make sure you type in something');
 	
 	}
 
 	else if (reply === 'search') {
 
-		rl.question('What topic would you like to search twitter for? ', function(answer){
+		rl.question('What topic would you like to search on twitter? ', function(answer){
 			
 			if(answer ===''){
 				rl.close();
-				console.log('Ha! we didnt forget to check please type in something');
+				console.log('Please type in something');
 			}
 
 			result = new Tweets(answer);
@@ -43,12 +43,12 @@ rl.question('What functionality would you like to access? (search/post/timeline)
 
 	else if(reply==='post') {
 
-		rl.question('What is on your mind ?', function(answer){
+		rl.question('What is on your mind?', function(answer){
 			
 			if(answer ===''){
 
 				rl.close();
-				console.log('Ha! we didnt forget to check please type in something');
+				console.log('Please type in something');
 			}
 
 			result = new Tweets(answer);
@@ -60,11 +60,11 @@ rl.question('What functionality would you like to access? (search/post/timeline)
 
 	else if (reply === 'timeline') {
 
-		rl.question('Whose timeline are you trying to view? ', function(answer){
+		rl.question('Whose timeline are would you like to view? ', function(answer){
 			
 			if(answer ===''){
 				rl.close();
-				console.log('Ha! we didnt forget to check please type in something');
+				console.log('Please type in something');
 			}
 
 			result = new Tweets(answer);
@@ -83,7 +83,7 @@ rl.question('What functionality would you like to access? (search/post/timeline)
 
 function  Tweets(answer) {
 /**
-*Comstructor that accepts value passed in by user
+*Constructor that accepts value passed in by user
 *@param answer
 */
 	
@@ -134,7 +134,7 @@ function  Tweets(answer) {
 */
 function loader(onComplete){
 	var self = result;
-    // EXAMPLE 2 ---------------------------------------------
+    //  ---------------------------------------------
     console.log('\nLoading tweets...');
 
     // create new progress bar using default values
@@ -157,7 +157,7 @@ function loader(onComplete){
         value++;
 
         // update the bar value
-        b2.update(value);
+        b2.update(value);	
 
         // set limit
         if (value >= b2.getTotal()){

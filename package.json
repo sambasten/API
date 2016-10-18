@@ -1,0 +1,23 @@
+{
+  "name": "apiconsume",
+  "version": "1.0.0",
+  "description": "a CLI to consume twitter API using http methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambasten/API.git"
+  },
+  "keywords": [
+    "twitter",
+    "api"
+  ],
+  "author": "Akinwumi Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sambasten/API/issues"
+  },
+  "homepage": "https://github.com/sambasten/API#readme"
+}
